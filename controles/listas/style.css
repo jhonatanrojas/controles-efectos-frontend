@@ -1,0 +1,18 @@
+.custom-list li{
+    list-style-type:none;
+    position:relative;
+}
+.custom-list li::before{
+    content:"\f00c";
+    position:absolute;
+    width:0.5em;
+    height:0.5em;
+    border-radius: 50%;
+color: aqua;
+    left:-1.3em;
+    top:0.25em;
+    font-family: fontAwesome;
+}
+
+
+
