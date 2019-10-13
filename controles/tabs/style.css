@@ -1,0 +1,65 @@
+.tabs{
+    overflow:hidden;
+    position:relative;
+}
+.indicator{
+    position:absolute;
+    bottom:-5px;
+    left:0px;
+    height:5px;
+    width:0px;
+    background-color: rgb(50,50,200);
+    border-radius:2;
+    transition:all 0.2s;
+
+}
+.tabs .container{
+    white-space: nowrap;
+    left:0px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1) ;
+    
+}
+.tabs  .container *{
+    white-space: normal; 
+}
+
+.tab{
+    display: inline-block;
+    width:100%;
+    padding:1em;
+    box-sizing: border-box;
+    vertical-align:top;
+
+    margin-right: -4px;
+
+}
+.card{
+    background: #ffffff;
+    border-radius: 2px;
+    width: 80%;
+    margin: 0 auto;
+    padding:1px;
+
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
+}
+
+.card .tabs-controls{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding:0px;
+}
+
+.tabs-controls a {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding:8px;
+    border:solid 1px #eee;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabs-controls a:visited {
+    color:inherit;
+}
